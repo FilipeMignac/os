@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            
+            border-collapse:collapse ;
+        }
+        td  ,th{
+            padding: 8px;
+            border: 1px solid black;
+            
+        }
+        thead{
+            background-color: grey;
+            color: white;
+        }
+        tfoot{
+            background-color: grey;
+            color: white;
+        }
+        caption{
+            font: 1.5em bold;
+            background: lightgray;
+            padding: 10px;
+            
+        }
+        tbody tr:nth-child(2){
+            background-color: lightgray;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>uso ed tabelas  grandes</h1>
+    <table>
+        <caption>paises</caption>
+        <thead>
+            <tr>
+                <th>estaaudoo</th>
+                <th>pupolaçao</th>
+
+            </tr>
+        </thead>
+         
+        <tbody>
+            <tr>
+                <td>sao pauo</td>
+                <td id="n1">104234</td>
+             </tr>
+             <tr>
+                <td>minas</td>
+                <td id="n2">14230</td>
+             </tr>
+             <tr>
+                <td>rio</td>
+                <td>17943</td>
+             </tr>
+        </tbody>
+       
+        <tfoot>
+             <tr>
+                <th>total de habitantes</th>
+                <td id="s1">000</td>
+             </tr>
+        </tfoot>
+    
+    </table>
+    <script>
+        var nn1 = document.getElementById('n1')
+        var nn2 = document.getElementById('n2')
+        
+        var soma1=  parseInt(nn1.textContent)
+        var soma2= parseInt(nn2.textContent)
+        var soma = soma1+soma2
+        
+        var s2 = document.getElementById('s1').innerHTML=soma
+
+
+
+    </script>
+</body>
+</html>
